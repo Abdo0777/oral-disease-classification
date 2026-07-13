@@ -1,0 +1,5 @@
+*.psd filter=lfs diff=lfs merge=lfs -text
+best_model_efficientnetb0_finetuned.keras filter=lfs diff=lfs merge=lfs -text
+*.kerasgit filter=lfs diff=lfs merge=lfs -text
+add filter=lfs diff=lfs merge=lfs -text
+. filter=lfs diff=lfs merge=lfs -text

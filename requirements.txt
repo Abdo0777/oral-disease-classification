@@ -1,0 +1,5 @@
+tensorflow>=2.15
+gradio>=4.0
+numpy
+pillow
+spaces
