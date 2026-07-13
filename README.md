@@ -86,3 +86,6 @@ scikit-learn
 matplotlib
 seaborn
 ```
+
+## 🚀 Try It Live
+👉 [**Click here to try the classifier**](https://huggingface.co/spaces/Abdo495/oral-disease-classifier)
