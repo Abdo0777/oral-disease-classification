@@ -2,6 +2,7 @@ import json
 
 import gradio as gr
 import numpy as np
+import spaces
 import tensorflow as tf
 from tensorflow.keras.applications.efficientnet import preprocess_input as eff_preprocess
 
@@ -15,6 +16,7 @@ with open(CLASS_INDICES_PATH, "r") as f:
     idx_to_class = {int(k): v for k, v in idx_to_class.items()}
 
 
+@spaces.GPU
 def predict_oral_disease(img):
     if img is None:
         return None
@@ -49,6 +51,9 @@ custom_css = """
 #header p {
     font-size: 15px;
     opacity: 0.9;
+}
+.class-card, .class-card * {
+    color: #ffffff !important;
 }
 .class-card {
     text-align: center;
